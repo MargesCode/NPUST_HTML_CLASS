@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pratice - Insert Video</title>
+    <style>
+        body{text-align: center}
+        .insertvideo{float:left;}
+        h1{font-size: 28px;font-weight: bolder}
+        .youtube{float:none;}
+    </style>
+</head>
+
+<body>
+    <article>
+        <section class="insertvideo">
+            <h1>Video1 - None auto play Video</h1>
+            <p></p>
+            <video wide="720" height="480" title="None AutoPlay Video" controls>
+                <source src="video/1008865556-preview.mp4" type="video/mp4">
+                <p>Your browser not support this video。</p>
+            </video>
+        </section>
+        <hr>
+        <section class="insertVideo">
+            <h1>Video2 - Loop and autoPlay Video</h1>
+            <p></p>
+            <video wide="720" height="480" title="Loop Video" autoplay loop controls>
+                <source src="video/18955577-preview.mp4" type="video/mp4">
+                <p>Your browser not support this video。</p>
+            </video>
+        </section>
+        <hr>
+        <section class="youtube">
+            <h1>Video3 - Insert from youtube</h1>
+            <p></p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/homXzC5gpvo" frameborder="0" allow="autoplay; encrypted-media"
+                allowfullscreen></iframe>
+
+        </section>
+
+
+    </article>
+</body>
+
+</html>

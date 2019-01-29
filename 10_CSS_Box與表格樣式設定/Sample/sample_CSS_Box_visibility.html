@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS_Box_Visibility</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto+Condensed" rel="stylesheet">
+    <style>
+        body {
+            font-size: 16px;
+            font-weight: bolder;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        ul {
+            margin: 2em;
+            border: 2px solid red;
+            width: 20%
+        }
+
+        li {
+            display: inline;
+            margin-right: 10px
+        }
+
+        .nd {
+            display: none
+        }
+
+        .vhide {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <ul id="list1">
+            <li>Iwamizawa</li>
+            <li class="nd">Sapporo</li>
+            <li>Otaru</li>
+            <li>Tomakomai</li>
+        </ul>
+
+        <ul id="list1">
+            <li>Iwamizawa</li>
+            <li class="vhide">Sapporo</li>
+            <li>Otaru</li>
+            <li>Tomakomai</li>
+        </ul>
+
+
+    </article>
+</body>
+
+</html>

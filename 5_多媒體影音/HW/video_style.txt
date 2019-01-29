@@ -1,0 +1,4 @@
+        body{text-align: center}
+        .insertvideo{float:left;}
+        h1{font-size: 28px;font-weight: bolder}
+        .youtube{float:none;}

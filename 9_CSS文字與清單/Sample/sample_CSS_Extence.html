@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        body {
+            font-size: 24px
+        }
+        
+        h1[class="lev1"] {
+            text-decoration: underline;
+        }
+        
+        h1[class="lev2"] {
+            text-decoration: none;
+            font-style: italic;
+            color: slategrey;
+            font-size: 20px
+        }
+        
+        p[class~="lev0"] {
+            color: red
+        }
+        
+        p[class~="lev1"] {
+            color: green
+        }
+        
+        p[class~="lev2"] {
+            color: blue
+        }
+        
+        p[class^="water"] {
+            background-color: lightcyan
+        }
+        
+        p[class*="re"] {
+            background-color: lavenderblush
+        }
+        
+        p[class$="0"] {
+            background-color: greenyellow
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="lev1">精靈寶可夢系列 </h1>
+    <h1 class="lev2">寶可夢圖鑑</h1>
+    <hr>
+    <p class="grass lev0">妙蛙花</p>
+    <p class="grass lev1">妙花草</p>
+    <p class="grass lev2">妙花種子</p>
+    <p class="fire lev1">噴火龍</p>
+    <p class="fire lev0">小火龍</p>
+    <p class="fire lev2">火恐龍</p>
+    <p class="water lev0">傑尼龜</p>
+    <p class="water lev1">卡咪龜</p>
+    <p class="water lev2">水箭龜</p>
+    <p class="insect lev0">綠毛蟲</p>
+    <p class="insect lev1">八大蝶</p>
+</body>
+
+</html>

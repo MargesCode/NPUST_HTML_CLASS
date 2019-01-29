@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>表格-基本範例</title>
+	<link rel="stylesheet" href="">
+	<style>
+		body{text-align: center;font-size: 18px;font-weight: bolder}
+		td{width: 100px;height: 100px}
+		.ClumsTitle1
+		{	height: 50px;
+			background-color: green;color: white;}
+		.ClumsTitle2
+		  { height: 100px;
+			background-color: red;color: white;}
+		.RowsTitle
+		   {background-color: blue;color: white}
+	</style>
+</head>
+<body>
+	<table border="2" width="50%" border="20" bordercolor="red">
+		<!--表格標題-->
+		<caption>
+			表格框線設定
+		</caption>
+		<!--表頭 - 欄位名稱-->
+		<thead>
+			<tr class="ClumsTitle1">
+			     <th></th>
+			     <th class="ClumsTitle">Group1</th>
+			     <th class="ClumsTitle" colspan="2">Group2</th>
+			</tr>
+			<tr class="ClumsTitle2">
+			     <th width="10%"></th>
+			     <th class="ClumsTitle" width="30%">A</td>
+			     <th class="ClumsTitle" width="40%">B</td>
+			     <th class="ClumsTitle" width="20%">C</td>
+			</tr>
+		</thead>
+		<!--表身 - 表格內容-->
+		<tbody>
+			<tr >
+			     <td class="RowsTitle">1</td>
+			     <td rowspan="2">A1</td>
+			     <td>B1</td>
+			     <td>C1</td>
+			</tr>
+			<tr>
+			  <td class="RowsTitle">2</td>
+			  <!-- <td>A2</td> -->
+			  <td>B2</td>
+			  <td>C2</td>
+			</tr>
+			<tr>
+			   <td class="RowsTitle">3</td>
+			   <td>A3</td>
+			   <td colspan="2">B3</td>
+			</tr>
+
+		</tbody>
+		<!--表尾 - 附註或其他相關內容-->
+		<tfoot>
+			<tr>
+			</tr>
+		</tfoot>
+	</table>
+</body>
+</html>

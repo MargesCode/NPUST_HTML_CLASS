@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Black+Han+Sans|Noto+Sans+TC|Ranga|Roboto+Mono|Slabo+27px" rel="stylesheet">
+    <title>CSS_Pseudo_first letter (line)</title>
+
+    <style>
+        body {
+            font-size: 24px
+        }
+        
+        article {
+            width: 60%
+        }
+        
+        p {
+            font-family: 'Ranga', cursive;
+        }
+        
+        h1 {
+            font-family: 'Black Han Sans', sans-serif;
+        }
+        
+        h2 {
+            font-family: 'Roboto Mono', monospace;
+        }
+        
+        section#eng,
+        section#eng p {
+            font-family: 'Slabo 27px', serif;
+        }
+        
+        section#tc {
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+        
+        #eng:first-letter {
+            font-size: 200%
+        }
+        
+        #eng:first-line {
+            color: blue;
+        }
+        
+        #tc:first-letter {
+            font-size: 200%
+        }
+        
+        #tc:first-line {
+            color: green
+        }
+        
+        a:hover {
+            background-color: yellow;
+            color: green;
+            font-weight: bolder
+        }
+        
+        a:link {
+            color: red;
+            text-decoration: none
+        }
+        
+        a:visited {
+            color: gray;
+            text-decoration: none;
+        }
+        
+        a:active {
+            color: gold;
+            background-color: lightgreen
+        }
+        /* a:focus {
+            background-color: red;
+            color: white
+        } */
+    </style>
+</head>
+
+<body>
+    <article>
+        <h1> Pokémon</h1>
+        <h2>From Wikipedia, the free encyclopedia</h2>
+        <p>(Redirected from Pokemon)</p>
+
+        <ol>
+            <li><a href="https://zh.wikipedia.org/wiki/%E7%B2%BE%E7%81%B5%E5%AE%9D%E5%8F%AF%E6%A2%A6%E7%B3%BB%E5%88%97" target="_blank">Pokemon - 中文版 Wiki</a></li>
+            <li><a href="https://en.wikipedia.org/wiki/Pok%C3%A9mon" target="_blank">Pokemon - 英文版 Wiki</a></li>
+            <li><a href="#">尚未開啟的連結</a></li>
+        </ol>
+        <section id="eng">
+            Pokémon (Japanese: ポケモン Hepburn: Pokemon, English: /ˈpoʊkɪˌmɒn, -ki-, -keɪ-/), also known as Pocket Monsters (ポケットモンスター) in Japan, is a media franchise managed by The Pokémon Company, a Japanese consortium between Nintendo, Game Freak, and Creatures.
+            <p>The franchise copyright is shared by all three companies, but Nintendo is the sole owner of the trademark.[5] The franchise was created by Satoshi Tajiri in 1995,and is centered on fictional creatures called "Pokémon", which humans, known
+                as Pokémon Trainers, catch and train to battle each other for sport. The English slogan for the franchise is "Gotta Catch 'Em All". Works within the franchise are set in the Pokémon universe.
+            </p>
+        </section>
+        <section id="tc">
+            精靈寶可夢系列是一個跨媒體製作的作品系列，包括遊戲、動畫、漫畫、卡片遊戲及相關產品；系列最初起源於GAME FREAK代表田尻智提出的原案，於1995年開發，並由任天堂於1996年發行的Game Boy平台遊戲《精靈寶可夢 紅·綠》。
+        </section>
+    </article>
+</body>
+
+</html>

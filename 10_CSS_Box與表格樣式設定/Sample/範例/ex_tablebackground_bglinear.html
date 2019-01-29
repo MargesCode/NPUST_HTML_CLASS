@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>表格背景設定</title>
+	<style>
+	caption
+		{
+			font-size: 24px;
+			color:red;
+			font-weight: bolder;
+			text-decoration: underline;
+		}
+	table
+	{
+		margin: auto;
+		width: 30%;padding: 10px;
+		border-spacing: 20px;
+	}
+	td
+	{
+		border-bottom-style: double;
+		border-color:red;
+		border-width: 5px;
+	}
+	#td1
+	{
+		height:150px;
+		background:linear-gradient(to bottom,yellow,orange)
+	}
+	#td2
+	{
+		height:150px;
+		background:linear-gradient(to top,yellow,blue)
+	}
+	#td3
+	{
+		height:150px;
+		background:linear-gradient(90deg,yellow,green)
+	}
+	</style>
+</head>
+<body>
+
+<table>
+	<caption>表格背景設定<br>漸層背景設定</caption>
+	<tr>
+		<td id="td1"></td>
+	</tr>
+	<tr>
+		<td id="td2"></td>
+	</tr>
+	<tr>
+		<td id="td3"></td>
+	</tr>
+
+</table>
+</body>
+</html>

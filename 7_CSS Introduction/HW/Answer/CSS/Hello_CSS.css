@@ -1,0 +1,38 @@
+body {
+    font-family: '標楷體'
+}
+
+h1 {
+    font-family: '微軟正黑體';
+    font-size: 200%;
+    color: green
+}
+
+h2 {
+    font-family: '微軟正黑體';
+    font-size: 150%;
+    color: red
+}
+
+section {
+    font-family: '標楷體'
+}
+
+span {
+    font-family: '微軟正黑體';
+    font-size: 24px
+}
+
+sup {
+    color: blue
+}
+
+h2 {
+    font-family: '微軟正黑體';
+    font-size: 150%;
+    color: red
+}
+
+footer {
+    color: orangered
+}

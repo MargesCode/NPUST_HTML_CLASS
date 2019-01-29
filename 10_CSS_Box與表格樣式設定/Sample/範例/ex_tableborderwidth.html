@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>CSS 表格的框線屬性</title>
+	<style>
+	caption{}
+	td{width: 100px;height: 100px;border-style: solid;}	
+	body{text-align: center;font-size: 18px}
+	#table1
+	{	border-color: green;
+		border-style: solid;
+		border-width: 20px;
+	}
+	#table2
+	{	border-style: solid;
+		border-top-color: red;
+		border-bottom-color: blue;
+		border-left-color: green;
+		border-right-color: purple;
+		border-top-width:30px;
+		border-bottom-width: 30px;
+		border-left-width:10px;
+		border-right-width:20px;
+	}
+
+	</style>
+</head>
+<body>
+	<table id="table1">
+		<caption>CSS 表格的框線屬性-框線寬度設定(border-width)</caption>
+		<tr>
+			<th>Col1</th>
+			<th>Col2</th>
+		</tr>
+		<tr>
+			<td>A1</td>
+			<td>A2</td>
+		</tr>
+		<tr>
+			<td>B1</td>
+			<td>b2</td>
+		</tr>
+	</table>
+	<p>
+	<table  id="table2">
+		<caption>CSS 表格的框線屬性-框線寬度設定(四邊分開設定)</caption>
+		<tr>
+			<th>Col1</th>
+			<th>Col2</th>
+		</tr>
+		<tr>
+			<td>A1</td>
+			<td>A2</td>
+		</tr>
+		<tr>
+			<td>B1</td>
+			<td>b2</td>
+		</tr>
+	</table>
+	
+</body>
+</html>

@@ -1,0 +1,17 @@
+body {
+    font-size: 20px;
+}
+
+header {
+    color: red
+}
+
+.section1 {
+    font-size: 24px;
+    font-weight: bolder;
+    color: green
+}
+
+ol {
+    line-height: 200%
+}

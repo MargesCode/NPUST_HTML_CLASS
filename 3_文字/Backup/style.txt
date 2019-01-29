@@ -1,0 +1,7 @@
+header,footer{display: block; clear:both;padding: 5px;text-align: center}
+aside{display: block; float: left; width:18%; height: 50%; background: powderblue;padding: 2px;line-height: 200%}
+article{display: block; float: right; width:80%; height: 50%; background: papayawhip;padding: 5px;}
+h1{font-weight: bolder;text-shadow:12px 8px 5px orange;}
+h2{color: blue;font-weight:bold ;text-align: center}
+h3{color:red;font-family: "·L³n¤¤¶ÂÅé"}
+footer{color: green;font-weight: bolder;}

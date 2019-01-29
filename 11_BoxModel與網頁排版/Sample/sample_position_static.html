@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>CSS_Z-index</title>
+	<style>
+		body {
+			border: none
+		}
+
+		div:last-child {
+			border: none
+		}
+
+		div {
+			/* height: 30%;* */
+			width: 30%;
+			font-size: 24px;
+			padding: 15px;
+			border-style: solid;
+			text-align: center;
+			margin: 1em
+		}
+
+		h1 {
+			margin: 10px;
+			border-bottom: 3px solid blue;
+			width: fit-content;
+			margin-left: auto;
+			margin-right: auto
+		}
+
+
+
+		.box1 {
+			background: linear-gradient(#CDFEFF 0%, blue 100%);
+			width: 200px;
+			height: 30px
+		}
+
+		.box2 {
+			background: linear-gradient(#FEFFCD 0%, yellow 100%);
+			width: 200px;
+			height: 30px
+		}
+
+		.box3 {
+			background: linear-gradient(lightgreen 0%, green 100%);
+			width: 200px;
+			height: 30px
+		}
+
+		.box4 {
+			background: linear-gradient(rgb(238, 196, 142) 0%, orange 100%);
+			width: 200px;
+			height: 30px
+		}
+
+		/* 
+			#relative>.box2 {
+				position: relative;
+				top: -30px;
+				left: 100px
+			}
+	
+			#relative>.box3 {
+				position: relative;
+				down: -30px;
+				right: 100px
+			}
+	
+			#relative>.box4 {
+				position: relative;
+				top: -30px;
+				left: 100px
+			} */
+
+		#zindexorg {
+			position: fixed;
+			top: 30px;
+			right: 300px;
+			z-index: 10;
+		}
+
+		#zindexset {
+			position: fixed;
+			top: 30px;
+			left: 300px;
+			z-index: 10;
+		}
+
+
+		#absolute>.box1 {
+			position: absolute;
+			top: 0px;
+			left: 0px;
+		}
+
+		#absolute>.box2 {
+			position: absolute;
+			top: 200px;
+			left: 10px;
+		}
+
+		#absolute>.box3 {
+			position: absolute;
+			top: 100px;
+			left: 300px;
+		}
+
+		#absolute>.box4 {
+			position: absolute;
+			top: 200px;
+			left: 300px;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="zindexorg">
+		<h1>Not Set zindex</h1>
+		<div class="box1">Display-Box1</div>
+		<div class="box2">Display-Box2</div>
+		<div class="box3">Display-Box3</div>
+		<div class="box4">Display-Box4</div>
+	</div>
+
+	<div id="zindexset">
+		<h1>relative</h1>
+		<div class="box1">relative-Box1</div>
+		<div class="box2">relative-Box2</div>
+		<div class="box3">relative-Box3</div>
+		<div class="box4">relative-Box4</div>
+	</div>
+</body>
+
+</html>

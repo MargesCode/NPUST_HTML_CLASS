@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW_Font Style</title>
+    <!-- <link rel="stylesheet" href="Style/Pratice1_table.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Oswald|Sawarabi+Mincho|Ubuntu|Ubuntu+Condensed"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.0em;
+    }
+
+    table {
+        border-collapse: collapse;
+    }
+
+    table,
+    th,
+    td {
+        border: 1px solid black;
+    }
+
+    th {
+        font-family: 'Ubuntu Condensed', sans-serif;
+        background-color: green;
+        color: white;
+        font-size: 1.5em
+    }
+
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        color: blue;
+
+    }
+
+    .tc {
+        font-family: 'Noto Sans TC', sans-serif;
+        color: purple;
+    }
+
+    .jap {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        color: green;
+        font-weight: bolder;
+        font-size: 1.2em
+    }
+
+    sup {
+        font-size: 0.5em
+    }
+
+    tfoot>tr>td {
+        background-color: palegoldenrod
+    }
+</style>
+
+<body>
+    <table class="table">
+        <caption>
+            <h1>Pokemon introduction</h1>
+        </caption>
+        <thead>
+            <tr>
+                <th>Pokemon Name</th>
+                <th>Picture</th>
+                <th>Type</th>
+                <th>Species</th>
+                <th>Abilities</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jigglypuff<p class="tc">(胖丁)</p>
+                </td>
+                <td>
+                    <img src="img/1_Jigglypuff.png" alt="Jugglypuff" width="80%" height="80%">
+                </td>
+                <td>Fairy</td>
+                <td>Balloon Pokémon</td>
+                <td>
+                    <ul>
+                        <li>Cute Charm</li>
+                        <li>Competitive</li>
+                        <li>Friend Guard<sup>(DW)</sup> </li>
+                    </ul>
+
+                </td>
+                <td>
+                    Jigglypuff (Japanese:<span class="jap"></span> プリン </span>Purin) is a dual-type Normal/Fairy
+                    Pokémon introduced in Generation I.
+                </td>
+            </tr>
+            <tr>
+                <td>Meowth<p class="tc">(喵喵)</p>
+                </td>
+                <td>
+                    <img src="img/1_Meowth.png" alt="Jugglypuff" width="80%" height="80%">
+                </td>
+                <td>Normal</td>
+                <td>
+                    Scratch Cat Pokémon
+                </td>
+                <td>
+                    <ul>
+                        <li>Pickup</li>
+                        <li>Technician</li>
+                        <li>Unnerve <sup>(DW)</sup></li>
+                    </ul>
+
+                </td>
+                <td>
+                    Meowth (Japanese: <span class="jap">ニャース </span>Nyarth) is a Normal-type Pokémon introduced in
+                    Generation I.
+                </td>
+            </tr>
+            <tr>
+                <td>Psyduck<p class="tc">(可達鴨)</p>
+                </td>
+                <td><img src="img/1_Pysduck.png" alt="Jugglypuff" width="80%" height="80%"></td>
+                <td rowspan="2">Water</td>
+                <td>
+                    Scratch Cat Pokémon
+                </td>
+                <td>
+                    <ul>
+                        <li>Damp</li>
+                        <li>Cloud Nine</li>
+                        <li>Swift Swim <sup>(DW)</sup></li>
+                    </ul>
+
+                </td>
+                <td>Psyduck (Japanese: <span class="jap">コダック</span> Koduck) is a Water-type Pokémon introduced in
+                    Generation I.</td>
+            </tr>
+            <tr>
+                <td>Squirtle<p class="tc">(小水龜)</p>
+                </td>
+                <td><img src="img/2_Squirtle.png" alt="Jugglypuff" width="80%" height="80%"></td>
+                <!-- <td>Water</td> -->
+                <td>
+                    Tiny Turtle Pokémon
+                </td>
+                <td>
+                    <ul>
+                        <li>Torrent</li>
+                        <li>Rain Dish <sup>(DW)</sup></li>
+                    </ul>
+                </td>
+                <td>Squirtle (Japanese: <span class="jap">ゼニガメ</span> Zenigame) is a Water-type Pokémon introduced in
+                    Generation I.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" align="left">Reference：<a href="http://pokemon.wikia.com/wiki/Category:Generation_I_Pok%C3%A9mon"
+                        target="_blank">FANDOM</a> </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

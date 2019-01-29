@@ -1,0 +1,46 @@
+ body {
+     font-size: 20px;
+     font-family: "微軟正黑體";
+ }
+
+ header,
+ footer,
+ article {
+     margin-left: 10%
+ }
+
+ header {
+     margin-top: 5%;
+     width: 80%;
+     background-color: #ffffcc;
+     text-align: center
+ }
+
+ article {
+     width: 80%;
+     background-color: #e6ffff
+ }
+
+ footer {
+     width: 80%;
+     background-color: #f2ffe6;
+ }
+
+ #cap {
+     color: red;
+     letter-spacing: 5px;
+     font-size: 150%;
+ }
+
+ dt {
+     font-size: 24px;
+     font-family: "標楷體"
+ }
+
+ #HyperLink {
+     letter-spacing: 5px;
+ }
+
+ dt {
+     line-height: 300%;
+ }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS_Box_Overflow </title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Roboto+Condensed" rel="stylesheet">
+    <style type="text/css">
+        article {
+            font-size: 24px;
+            font-weight: bolder;
+            font-family: 'Noto Sans TC', sans-serif;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        
+        section {
+            width: 80%;
+            margin-bottom: 5em;
+            border: 2px dotted purple
+        }
+        
+        h2 {
+            color: blue;
+            border-bottom: 1px solid #0088dd
+        }
+        
+        p {
+            min-height: 10px;
+            max-height: 30px
+        }
+        
+        #sec1 {
+            overflow: hidden;
+        }
+        
+        #sec2 {
+            overflow: scroll;
+        }
+    </style>
+</head>
+
+<body>
+    <article>
+        <section id='sec1'>
+            <h2>Hokkaido </h2>
+            <p>Hokkaido, formerly known as Ezo, Yezo, Yeso, or Yesso, is the second largest island of Japan, and the largest and northernmost prefecture. The Tsugaru Strait separates Hokkaido from Honshu.[1] The two islands are connected by the undersea
+                railway Seikan Tunnel. The largest city on Hokkaido is its capital, Sapporo, which is also its only ordinance-designated city. About 43 km north of Hokkaido lies Sakhalin Island, Russia. To its east and north-east are the disputed Kuril
+                Islands.
+            </p>
+        </section>
+        <section id='sec2'>
+            <h2>Sapporo (札幌市 Sapporo-shi) </h2>
+            <p>Sapporo is the fifth largest city of Japan by population, and the largest city on the northern Japanese island of Hokkaido. It is the capital city of Hokkaido Prefecture and Ishikari Subprefecture. It is the northernmost ordinance-designated
+                city in Japan and has the fourth largest population in Japanese cities.</p>
+
+        </section>
+        <!-- <section id='sec3'>
+            <h2>Hokkaido</h2>
+            <p>Hokkaido, formerly known as Ezo, Yezo, Yeso, or Yesso, is the second largest island of Japan,
+                and the largest and northernmost prefecture. The Tsugaru Strait separates Hokkaido from Honshu.[1] The
+                two islands are connected by the undersea railway Seikan Tunnel. The largest city on Hokkaido is its
+                capital, Sapporo, which is also its only ordinance-designated city. About 43 km north of Hokkaido lies
+                Sakhalin Island, Russia. To its east and north-east are the disputed Kuril Islands.</p>
+
+        </section>
+        <section id='sec4'>
+            <h2>Hokkaidoy</h2>
+            <p>Hokkaido, formerly known as Ezo, Yezo, Yeso, or Yesso, is the second largest island of Japan,
+                and the largest and northernmost prefecture. The Tsugaru Strait separates Hokkaido from Honshu.[1] The
+                two islands are connected by the undersea railway Seikan Tunnel. The largest city on Hokkaido is its
+                capital, Sapporo, which is also its only ordinance-designated city. About 43 km north of Hokkaido lies
+                Sakhalin Island, Russia. To its east and north-east are the disputed Kuril Islands.</p>
+
+        </section> -->
+    </article>
+</body>
+
+</html>

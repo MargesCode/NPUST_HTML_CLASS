@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS_Display_Sample</title>
+    <style>
+        div {
+            width: 30%;
+            font-size: 24px;
+            padding: 15px;
+            border-style: solid;
+            text-align: center;
+            margin: 1em
+        }
+
+        div>div {
+            width: 200px;
+            height: 30px;
+        }
+
+        h1 {
+            margin: 10px;
+            border-bottom: 3px solid blue;
+        }
+
+
+        .box1 {
+            background: linear-gradient(#CDFEFF 0%, blue 100%);
+            display: none
+        }
+
+        .box2 {
+            background: linear-gradient(#FEFFCD 0%, yellow 100%);
+            display: inline
+        }
+
+        .box3 {
+            background: linear-gradient(lightgreen 0%, green 100%);
+            display: block
+        }
+
+        .box4 {
+            background: linear-gradient(rgb(238, 196, 142) 0%, orange 100%);
+            display: inline-block
+        }
+    </style>
+</head>
+
+<body>
+    <div id="static">
+        <h1>Sample-Display</h1>
+        <div class="box1">Display-Box1</div>
+        <div class="box2">Display-Box2</div>
+        <div class="box3">Display-Box3</div>
+        <div class="box4">Display-Box4</div>
+    </div>
+
+
+
+</body>
+
+</html>

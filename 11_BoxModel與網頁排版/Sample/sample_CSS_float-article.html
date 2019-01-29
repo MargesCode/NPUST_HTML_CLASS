@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS範例- Float</title>
+    <style>
+        header,
+        nav,
+        nav,
+        section,
+        footer,
+        .sec {
+            width: 40%;
+            margin-bottom: 2em
+        }
+
+        header {
+            color: blue;
+            border-bottom: 2px dashed darkblue;
+            text-align: center;
+            background: #efefef
+        }
+
+        nav {
+            background-color: lightgoldenrodyellow;
+            display: block;
+            width: 250px;
+            margin: 10px;
+            padding: 2 px;
+
+        }
+
+        #block1>nav {
+            float: none;
+        }
+
+        #block2>nav {
+            float: right;
+        }
+
+        #block3>nav {
+            float: left;
+        }
+
+        img {
+            width: 150px;
+            height: 120px;
+            margin: 1em
+        }
+
+        #pic1 {
+            float: none;
+
+        }
+
+        #pic2 {
+            float: left;
+
+        }
+
+
+        #pic3 {
+            float: right;
+        }
+
+
+        nav>h3 {
+            border-top: 1px solid;
+            border-bottom: 1px solid;
+            text-align: center;
+        }
+
+        section,
+        .sec {
+            border: 2px solid;
+            border-radius: 10px;
+            padding: 15px
+        }
+
+        h2 {
+            margin: 2px;
+            padding: 10px;
+            color: red
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hokkaido</h1>
+        <p>From Wikipedia, the free encyclopedia</p>
+    </header>
+
+    <article>
+
+        <section id="block1">
+            <h2>Summary</h2>
+            <nav>
+                <h3>Content List</h3>
+                <ul>
+                    <li>Summary</li>
+                    <li> Wildlife</li>
+                    <li>Subprefectures</li>
+                </ul>
+            </nav>
+
+            <p>Hokkaido (北海道 Hokkaidō, literally "Northern Sea Circuit"; Japanese pronunciation: [hokkaꜜidoː] (About
+                this soundlisten)), formerly known as Ezo, Yezo, Yeso, or Yesso, is the second largest island of Japan,
+                and the largest and northernmost prefecture. </p>
+
+            <p>The Tsugaru Strait separates Hokkaido from Honshu. The
+                two islands are connected by the undersea railway Seikan Tunnel. The largest city on Hokkaido is
+                its
+                capital,Sapporo, which is also its only ordinance-designated city. </p>
+            <p>About 43 km north of Hokkaido lies Sakhalin
+                Island, Russia. To its east and north-east are the disputed Kuril Islands.</p>
+        </section>
+
+        <section id="block2">
+            <h2>Summary</h2>
+            <nav>
+                <h3>Content List</h3>
+                <ul>
+                    <li>Summary</li>
+                    <li> Wildlife</li>
+                    <li>Subprefectures</li>
+                </ul>
+            </nav>
+
+            <p>Hokkaido (北海道 Hokkaidō, literally "Northern Sea Circuit"; Japanese pronunciation: [hokkaꜜidoː] (About
+                this soundlisten)), formerly known as Ezo, Yezo, Yeso, or Yesso, is the second largest island of Japan,
+                and the largest and northernmost prefecture. </p>
+
+            <p>The Tsugaru Strait separates Hokkaido from Honshu. The
+                two islands are connected by the undersea railway Seikan Tunnel. The largest city on Hokkaido is
+                its
+                capital,Sapporo, which is also its only ordinance-designated city. </p>
+            <p>About 43 km north of Hokkaido lies Sakhalin
+                Island, Russia. To its east and north-east are the disputed Kuril Islands.</p>
+        </section>
+
+        <section id="block3">
+            <h2>Summary</h2>
+            <nav>
+                <h3>Content List</h3>
+                <ul>
+                    <li>Summary</li>
+                    <li> Wildlife</li>
+                    <li>Subprefectures</li>
+                </ul>
+            </nav>
+
+            <p>Hokkaido (北海道 Hokkaidō, literally "Northern Sea Circuit"; Japanese pronunciation: [hokkaꜜidoː] (About
+                this soundlisten)), formerly known as Ezo, Yezo, Yeso, or Yesso, is the second largest island of Japan,
+                and the largest and northernmost prefecture. </p>
+
+            <p>The Tsugaru Strait separates Hokkaido from Honshu. The
+                two islands are connected by the undersea railway Seikan Tunnel. The largest city on Hokkaido is
+                its
+                capital,Sapporo, which is also its only ordinance-designated city. </p>
+            <p>About 43 km north of Hokkaido lies Sakhalin
+                Island, Russia. To its east and north-east are the disputed Kuril Islands.</p>
+        </section>
+
+
+        <section id="pic_block1">
+            <h2>Summary</h2>
+            <p>Hokkaido (北海道 Hokkaidō, literally "Northern Sea Circuit"; Japanese pronunciation: [hokkaꜜidoː] (About
+                this soundlisten)),
+                <div id="pic1"> <img src="img/10076.jpg" alt="Hokkaido"></div> formerly known as Ezo, Yezo, Yeso, or
+                Yesso, is the
+                second largest island of Japan,
+                and the largest and northernmost prefecture. </p>
+
+            <p>The Tsugaru Strait separates Hokkaido from Honshu. The
+                two islands are connected by the undersea railway Seikan Tunnel. The largest city on Hokkaido is
+                its
+                capital,Sapporo, which is also its only ordinance-designated city. </p>
+            <p>About 43 km north of Hokkaido lies Sakhalin
+                Island, Russia. To its east and north-east are the disputed Kuril Islands.</p>
+        </section>
+
+        <section id="pic_block2">
+            <h2>Summary</h2>
+            <p>Hokkaido (北海道 Hokkaidō, literally "Northern Sea Circuit"; Japanese pronunciation: [hokkaꜜidoː] (About
+                this soundlisten)),
+                <div id="pic2"><img src="img/10076.jpg" alt="Hokkaido"> </div>formerly known as Ezo, Yezo, Yeso, or
+                Yesso, is the
+                second largest island of Japan,
+                and the largest and northernmost prefecture. </p>
+
+            <p>The Tsugaru Strait separates Hokkaido from Honshu. The
+                two islands are connected by the undersea railway Seikan Tunnel. The largest city on Hokkaido is
+                its
+                capital,Sapporo, which is also its only ordinance-designated city. </p>
+            <p>About 43 km north of Hokkaido lies Sakhalin
+                Island, Russia. To its east and north-east are the disputed Kuril Islands.</p>
+        </section>
+
+        <section id="pic_block3">
+            <h2>Summary</h2>
+            <p>Hokkaido (北海道 Hokkaidō, literally "Northern Sea Circuit"; Japanese pronunciation: [hokkaꜜidoː] (About
+                this soundlisten)),
+                <div id="pic3"> <img src="img/10076.jpg" alt="Hokkaido"></div> formerly known as Ezo, Yezo, Yeso, or
+                Yesso, is the
+                second largest island of Japan,
+                and the largest and northernmost prefecture. </p>
+
+            <p>The Tsugaru Strait separates Hokkaido from Honshu. The
+                two islands are connected by the undersea railway Seikan Tunnel. The largest city on Hokkaido is
+                its
+                capital,Sapporo, which is also its only ordinance-designated city. </p>
+            <p>About 43 km north of Hokkaido lies Sakhalin
+                Island, Russia. To its east and north-east are the disputed Kuril Islands.</p>
+        </section>
+
+        <!-- <div class="sec">
+            <h2> Wildlife</h2>
+            <p>There are three populations of the Hokkaido brown bear subspecies (Ursus arctos yesoensis). There are
+                more brown bears in Hokkaido than anywhere else in Asia besides Russia. </p>
+            <p>The Hokkaido brown bear is separated into three distinct lineages. There are only eight lineages in the
+                world.[21] Those on Honshu died out
+                long ago.</p>
+            <p> Native conifer species in Northern Hokkaido is the Abies sachalinensis (sakhalin fir)[22] The
+                Hydrangea hirta species is also located on this island.</p>
+        </div>
+        <section>
+            <h2>Subprefectures</h2>
+            <ol>
+                <li>Sorachi 空知総合振興局 Iwamizawa Iwamizawa 338,485 5,791.19 10 cities 14 towns </li>
+                <li>Shiribeshi 後志総合振興局 Kutchan Otaru 234,984 4,305.83 1 city 13 towns 6 villages</li>
+                <li>Iburi 胆振総合振興局 Muroran Tomakomai 419,115 3,698.00 4 cities 7 towns </li>
+                <li>Oshima 渡島総合振興局 Hakodate Hakodate 433,475 3,936.46 2 cities 9 towns </li>
+                <li>Kamikawa 上川総合振興局 Asahikawa Asahikawa 527,575 10,619.20 4 cities 17 towns 2 villages</li>
+                <li>Sōya 宗谷総合振興局 Wakkanai Wakkanai 71,423 4,625.09 1 city 8 towns 1 village</li>
+                <li>Okhotsk オホーツク総合振興局 Abashiri Kitami 309,487 10,690.62 3 cities 14 towns 1 village</li>
+                <li>Tokachi 十勝総合振興局 Obihiro Obihiro 353,291 10,831.24 1 city 16 towns 2 villages</li>
+                <li>Kushiro 釧路総合振興局 Kushiro Kushiro 252,571 5,997.38 1 city 6 towns 1 village</li>
+
+            </ol>
+        </section> -->
+
+    </article>
+    <footer>
+        <p> Data From<a href="https://en.wikipedia.org/wiki/Hokkaido" target="_blank"> Wiki Page </a></p>
+    </footer>
+
+</body>
+
+</html>

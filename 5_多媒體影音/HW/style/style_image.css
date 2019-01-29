@@ -1,0 +1,47 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif, "微軟正黑體";
+    font-size: 24px
+}
+
+#topic {
+    color: green
+}
+
+li {
+    line-height: 200%;
+    font-size: 26px
+}
+
+header {
+    color: blue;
+    text-align: center;
+}
+
+footer {
+    font-size: 80%;
+    text-align: center;
+
+}
+
+.description {
+    color: darkmagenta;
+    font-family: "標楷體"
+}
+
+.image {
+    border-color: deepskyblue;
+    border-style: dotted
+}
+
+#sec01 {
+    background-color: antiquewhite
+}
+
+#sec02 {
+    background-color: rgb(245, 255, 240)
+}
+
+.name {
+    background-color: red;
+    color: yellow
+}

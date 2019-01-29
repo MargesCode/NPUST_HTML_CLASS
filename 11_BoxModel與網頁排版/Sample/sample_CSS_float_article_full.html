@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS範例-使用浮動元件設定排版</title>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Oswald|Roboto|Ubuntu" rel="stylesheet">
+    <style>
+        header,
+        article,
+        footer {
+            margin-top: 1em;
+            margin-bottom: 1em
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif, 'Noto Sans TC';
+            font-size: 16px;
+
+        }
+
+        h1,
+        h2 {
+            font-family: 'Oswald', sans-serif, 'Noto Sans TC';
+            letter-spacing: 5px
+        }
+
+        p {
+            font-family: 'Ubuntu', sans-serif, 'Noto Sans TC';
+        }
+
+        header {
+            color: blue;
+            border-bottom: 2px dashed darkblue;
+            text-align: center;
+            /* background: #efefef */
+        }
+
+
+        nav {
+            width: 250px;
+            float: right;
+            /* clear: right; */
+            background-color: lightgoldenrodyellow;
+            border-top: 1px #efefefef solid;
+            border-bottom: 1px #efefefef solid;
+            line-height: 2em;
+            margin: 20px
+        }
+
+        /* article {
+            float: left
+        } */
+
+        header {
+            width: 70%
+        }
+
+
+
+        section {
+            /* float: left; */
+            width: 30%;
+            border: 2px solid;
+            border-radius: 10px;
+            margin: 1em;
+            overflow: auto
+        }
+
+        #sec3 {
+            width: 60%;
+            float: left;
+            clear: left;
+        }
+
+        #sec4 {
+            clear: left;
+            width: 60%;
+        }
+
+        footer {
+            clear: left;
+
+
+        }
+
+        h2 {
+            margin: 2px;
+            padding: 10px;
+            color: red
+        }
+
+        nav>ul>h2 {
+            width: fit-content;
+            border-top: 2px dotted;
+            border-bottom: 2px dotted;
+            margin-bottom: 1em
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Hokkaido</h1>
+        <h3>From Wikipedia, the free encyclopedia<h3>
+
+    </header>
+    <nav>
+        <ul>
+            <h2>Memu</h2>
+            <li>Summary</li>
+            <li> Wildlife</li>
+            <li>Subprefectures</li>
+        </ul>
+    </nav>
+    <article>
+        <section id="sec1">
+            <h2>Summary</h2>
+            <p>Hokkaido (北海道 Hokkaidō, literally "Northern Sea Circuit"; Japanese pronunciation: [hokkaꜜidoː] (About
+                this soundlisten)), formerly known as Ezo, Yezo, Yeso, or Yesso, is the second largest island of Japan,
+                and the largest and northernmost prefecture. </p>
+            <p>The Tsugaru Strait separates Hokkaido from Honshu. The
+                two islands are connected by the undersea railway Seikan Tunnel. The largest city on Hokkaido is
+                its
+                capital,Sapporo, which is also its only ordinance-designated city. </p>
+            <p>About 43 km north of Hokkaido lies Sakhalin
+                Island, Russia. To its east and north-east are the disputed Kuril Islands.</p>
+        </section>
+        <section id="sec2">
+            <h2> Wildlife</h2>
+            <p>There are three populations of the Hokkaido brown bear subspecies (Ursus arctos yesoensis). There are
+                more brown bears in Hokkaido than anywhere else in Asia besides Russia. </p>
+            <p>The Hokkaido brown bear is separated into three distinct lineages. There are only eight lineages in the
+                world. Those on Honshu died out
+                long ago.</p>
+            <p> Native conifer species in Northern Hokkaido is the Abies sachalinensis (sakhalin fir) The
+                Hydrangea hirta species is also located on this island.</p>
+        </section>
+        <section id="sec3">
+            <h2> Geography</h2>
+
+            <p>The island of Hokkaido is located at the north end of Japan, near Russia, and has coastlines on the Sea
+                of Japan, the Sea of Okhotsk, and the Pacific Ocean. The center of the island has a number of mountains
+                and volcanic plateaux, and there are coastal plains in all directions. Major cities include Sapporo and
+                Asahikawa in the central region and the port of Hakodate facing Honshu.</p>
+
+            <p>The governmental jurisdiction of Hokkaido incorporates several smaller islands, including Rishiri,
+                Okushiri Island, and Rebun. (By Japanese reckoning, Hokkaido also incorporates several of the Kuril
+                Islands).
+                Because the prefectural status of Hokkaido is denoted by the dō in its name, it is rarely referred to
+                as
+                "Hokkaido Prefecture", except when necessary to distinguish the governmental entity from the island.</p>
+
+            <p>The island ranks 21st in the world by area. It is 3.6% smaller than the island of Ireland while
+                Hispaniola is 6.1% smaller than Hokkaido. By population it ranks 20th, between Ireland and Sicily.
+                Hokkaido's
+                population is 4.7% less than that of the island of Ireland, and Sicily's is 12% lower than Hokkaido's.</p>
+
+            <p>In the east, there are two areas (surrounding, for example, Shari and the Nakashibetsu Airport) where a
+                grid with spacing of nearly 3 km is formed by narrow bands of forest.[citation needed] It was designed
+                to
+                buffer wind, especially during blizzards, to protect cattle. It also serves as habitat and
+                transportation
+                corridors for animals and hikers.</p>
+        </section>
+        <section id="sec4">
+            <h2>Subprefectures</h2>
+            <ol>
+                <li>Sorachi 空知総合振興局 Iwamizawa Iwamizawa 338,485 5,791.19 10 cities 14 towns </li>
+                <li>Shiribeshi 後志総合振興局 Kutchan Otaru 234,984 4,305.83 1 city 13 towns 6 villages</li>
+                <li>Iburi 胆振総合振興局 Muroran Tomakomai 419,115 3,698.00 4 cities 7 towns </li>
+                <li>Oshima 渡島総合振興局 Hakodate Hakodate 433,475 3,936.46 2 cities 9 towns </li>
+                <li>Kamikawa 上川総合振興局 Asahikawa Asahikawa 527,575 10,619.20 4 cities 17 towns 2 villages</li>
+                <li>Sōya 宗谷総合振興局 Wakkanai Wakkanai 71,423 4,625.09 1 city 8 towns 1 village</li>
+                <li>Okhotsk オホーツク総合振興局 Abashiri Kitami 309,487 10,690.62 3 cities 14 towns 1 village</li>
+                <li>Tokachi 十勝総合振興局 Obihiro Obihiro 353,291 10,831.24 1 city 16 towns 2 villages</li>
+                <li>Kushiro 釧路総合振興局 Kushiro Kushiro 252,571 5,997.38 1 city 6 towns 1 village</li>
+
+            </ol>
+        </section>
+
+    </article>
+    <footer>
+        <p> Data From<a href="https://en.wikipedia.org/wiki/Hokkaido" target="_blank"> Wiki Page </a></p>
+    </footer>
+
+</body>
+
+</html>

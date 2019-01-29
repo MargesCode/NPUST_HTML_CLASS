@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample - Map</title>
+</head>
+
+<body>
+
+    <img src="img/map.PNG" alt="影像地圖" usemap="#Hakkapark">
+    <map name="Hakkapark">
+        <area shape="poly" coords="510,6,510,196,816,197" href="https://thcdc.hakka.gov.tw/wSite/ct?xItem=5376&ctNode=1261&mp=3"
+            alt="多媒體展示廳" target="_blank">
+        <!--多邊形(三角形為例)  coords="頂點1 x,頂點1 y,頂點2 x,頂點2 y,頂點3 x,頂點3 y -->
+
+        <area shape="rect" coords="20,287,189,428" href="https://thcdc.hakka.gov.tw/wSite/ct?xItem=10372&ctNode=1268&mp=3"
+            alt="遊客服務中心(歡喜傘)" target="_blank">
+        <!--方形  coords="左上角 x,左上角 y,右下角 x,右下角 y -->
+
+        <area shape="circle" coords="508,471,117" href="https://thcdc.hakka.gov.tw/wSite/ct?xItem=10370&ctNode=1266&mp=3"
+            alt="菸樓" target="_self">
+        <!--  coords="圓心座標 x,圓心座標 y,週長 -->
+
+        <area shape="default" nohref>
+    </map>
+</body>
+
+</html>

@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HW_CSS_Table</title>
+    <!-- <link rel="stylesheet" href="Style/Pratice1_table.css"> -->
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+TC|Oswald|Sawarabi+Mincho|Ubuntu|Ubuntu+Condensed"
+        rel="stylesheet">
+</head>
+<style>
+    body {
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 1.0em;
+    }
+
+
+    /* 作業五 修改部分 */
+    caption {
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        font-size: 120%;
+        font-weight: bolder
+    }
+
+
+
+    table {
+
+        margin: 10px auto 10px auto;
+        width: 80%;
+        box-shadow: 10px 10px 10px lightskyblue;
+        border-collapse: collapse;
+        /* border: 5px double blue; */
+        padding: 10px;
+        border-style: double;
+        border-width: 0.5em;
+        border-color: deepskyblue
+    }
+
+    th {
+        font-family: 'Ubuntu Condensed', sans-serif;
+
+        font-size: 1.5em;
+        color: brown;
+        font-weight: bolder;
+        text-transform: uppercase;
+        border-bottom: 5px solid;
+        border-color: lightskyblue
+    }
+
+    #sig {
+        background-color: lavender
+    }
+
+    #dob {
+        background-color: lavenderblush
+    }
+
+
+
+    th,
+    td {
+        padding: 0.5em 2em 0.5em 2em;
+    }
+
+    td {
+        border-bottom-style: double;
+        border-width: 5px;
+        border-color: lightskyblue
+    }
+
+
+
+    /* 作業五 修改部分  結束*/
+
+    h1 {
+        font-family: 'Oswald', sans-serif;
+        color: blue;
+        text-shadow: 1px 1px 1px black;
+        text-decoration: underline;
+        letter-spacing: 0.2em;
+        text-transform: uppercase
+    }
+
+    h1:hover {
+        text-transform: lowercase;
+        background-color: yellow;
+        color: blue
+    }
+
+    .tc,
+    .jap {
+        font-weight: bolder;
+        font-style: italic
+    }
+
+    .tc {
+        font-family: 'Noto Sans TC', sans-serif;
+        color: purple;
+    }
+
+    .jap {
+        font-family: 'Sawarabi Mincho', sans-serif;
+        color: green;
+        font-size: 1.2em;
+    }
+
+    sup {
+        font-size: 0.5em
+    }
+
+    tfoot>tr>td {
+        background-color: palegoldenrod;
+        font-style: italic
+    }
+
+    .name {
+        text-align: center;
+    }
+
+    .name:hover {
+        color: red
+    }
+
+    .abilit {
+        line-height: 1.5em
+    }
+
+    .pic {
+        text-align: center
+    }
+
+    .desc::first-letter {
+        font-size: 150%;
+        font-weight: bolder;
+        color: red
+    }
+
+    a:link,
+    a:visited {
+        color: green;
+        font-weight: bolder;
+        text-decoration: none
+    }
+
+    a:hover {
+        background-color: green;
+        color: white;
+        font-size: 150%
+    }
+
+    a:active {
+        background-color: yellow;
+        color: red
+    }
+
+    a:default {
+        color: yellow
+    }
+
+    ul {
+        list-style-image: url("img/pokeball.png")
+    }
+</style>
+
+<body>
+    <table class="table">
+        <caption>
+            <h1>Pokemon introduction</h1>
+        </caption>
+        <thead>
+            <tr>
+                <th>Pokemon Name</th>
+                <th>Picture</th>
+                <th>Type</th>
+                <th>Species</th>
+                <th>Abilities</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr id="sig">
+                <td class="name">Jigglypuff
+                    <p class="tc">(胖丁)</p>
+                </td>
+                <td class="pic">
+                    <img src="img/1_Jigglypuff.png" alt="Jugglypuff" width="80%" height="80%">
+                </td>
+                <td>Fairy</td>
+                <td>Balloon Pokémon</td>
+                <td class='abilit'>
+                    <ul>
+                        <li>Cute Charm</li>
+                        <li>Competitive</li>
+                        <li>Friend Guard<sup>(DW)</sup> </li>
+                    </ul>
+
+                </td>
+                <td class='desc'>
+                    Jigglypuff (Japanese:<span class="jap"> プリン </span>Purin) is a dual-type Normal/Fairy Pokémon
+                    introduced in Generation I.
+                </td>
+            </tr>
+            <tr id="dob">
+                <td class="name">Meowth
+                    <p class="tc">(喵喵)</p>
+                </td>
+                <td class="pic">
+                    <img src="img/1_Meowth.png" alt="Jugglypuff" width="80%" height="80%">
+                </td>
+                <td>Normal</td>
+                <td>
+                    Scratch Cat Pokémon
+                </td>
+                <td class='abilit'>
+                    <ul>
+                        <li>Pickup</li>
+                        <li>Technician</li>
+                        <li>Unnerve <sup>(DW)</sup></li>
+                    </ul>
+
+                </td>
+                <td class='desc'>
+                    Meowth (Japanese: <span class="jap">ニャース </span>Nyarth) is a Normal-type Pokémon introduced in
+                    Generation I.
+                </td>
+            </tr>
+            <tr id="sig">
+                <td class="name">Psyduck
+                    <p class="tc">(可達鴨)</p>
+                </td>
+                <td class="pic"><img src="img/1_Pysduck.png" alt="Jugglypuff" width="80%" height="80%"></td>
+                <td rowspan="2">Water</td>
+                <td>
+                    Scratch Cat Pokémon
+                </td>
+                <td class='abilit'>
+                    <ul>
+                        <li>Damp</li>
+                        <li>Cloud Nine</li>
+                        <li>Swift Swim <sup>(DW)</sup></li>
+                    </ul>
+
+                </td>
+                <td class='desc'>Psyduck (Japanese: <span class="jap">コダック</span> Koduck) is a Water-type Pokémon
+                    introduced in Generation I.</td>
+            </tr>
+            <tr id="dob">
+                <td class="name">Squirtle
+                    <p class="tc">(小水龜)</p>
+                </td>
+                <td class="pic"><img src="img/2_Squirtle.png" alt="Jugglypuff" width="80%" height="80%"></td>
+
+                <td>
+                    Tiny Turtle Pokémon
+                </td>
+                <td class='abilit'>
+                    <ul>
+                        <li>Torrent</li>
+                        <li>Rain Dish <sup>(DW)</sup></li>
+                    </ul>
+                </td>
+                <td class='desc'>Squirtle (Japanese: <span class="jap">ゼニガメ</span> Zenigame) is a Water-type Pokémon
+                    introduced in Generation I.</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="6" align="left">Reference：<a href="http://pokemon.wikia.com/wiki/Category:Generation_I_Pok%C3%A9mon"
+                        target="_blank">FANDOM</a> </td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>

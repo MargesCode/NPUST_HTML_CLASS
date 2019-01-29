@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS_背景顏色_線性漸層(重複)</title>
+    <STYLE>
+        /* color name */
+        
+        * {
+            font-size: 120%;
+            color: white;
+            font-weight: bolder;
+            font-family: '微軟正黑體';
+            width: 70%;
+        }
+        
+        h1 {
+            color: white;
+            background-color: black
+        }
+        
+        span {
+            color: red;
+            background-color: yellow;
+            opacity: 0.5
+        }
+        /* 設定為垂直重複 */
+        
+        #chp1 {
+            background-image: linear-gradient(to right, green, blue);
+        }
+        
+        #chp1-1 {
+            background-image: repeating-linear-gradient(to right, green, blue);
+        }
+        
+        #chp1-2 {
+            background-image: repeating-linear-gradient(to right, green, blue 10%, green 20%);
+        }
+        /* 帶有角度設定 */
+        
+        #chp2 {
+            background-image: repeating-linear-gradient(45deg, red, blue 7%, green 10%);
+        }
+        
+        #chp2-1 {
+            background-image: repeating-linear-gradient(190deg, red, blue 7%, green 10%);
+        }
+        
+        #chp2-2 {
+            background-image: repeating-linear-gradient(90deg, red, blue 7%, green 10%);
+        }
+        
+        #chap3,
+        #chap3-1,
+        #chap3-2,
+        #chap3-e,
+        #chap3-4 {
+            height: 150px;
+        }
+        
+        #chp3 {
+            background-image: repeating-linear-gradient(red, yellow 20%, green 30%);
+        }
+        
+        #chp3-1 {
+            background-image: repeating-linear-gradient(to bottom, red, yellow 20%, green 30%);
+        }
+        
+        #chp3-2 {
+            background-image: repeating-linear-gradient(to top, red, yellow 20%, green 30%);
+        }
+        
+        #chp3-3 {
+            background-image: repeating-linear-gradient(to right, green, purple 20%, red 30%);
+        }
+        
+        #chp3-4 {
+            background-image: repeating-linear-gradient(to left, green, purple 20%, red 30%);
+        }
+    </STYLE>
+</head>
+
+<body>
+
+    <P id="chp1">人生短短幾個秋啊 不醉不罷休</P>
+    <P id="chp1-1">人生短短幾個秋啊 不醉不罷休</P>
+    <P id="chp1-2">人生短短幾個秋啊 不醉不罷休</P>
+    <P id="chp2">東邊兒我的美人哪 西邊兒黃河流 </P>
+    <P id="chp2-1">東邊兒我的美人哪 西邊兒黃河流 </P>
+    <P id="chp2-2">東邊兒我的美人哪 西邊兒黃河流 </P>
+    <div id="chp3">
+        <P>來呀來個酒啊 不醉不罷休 </P>
+        <P>愁情煩事別放心頭</P>
+    </div>
+    <hr>
+    <div id="chp3-1">
+        <P>來呀來個酒啊 不醉不罷休 </P>
+        <P>愁情煩事別放心頭</P>
+    </div>
+    <hr>
+    <div id="chp3-2">
+        <P>來呀來個酒啊 不醉不罷休 </P>
+        <P>愁情煩事別放心頭</P>
+    </div>
+    <hr>
+    <div id="chp3-3">
+        <P>來呀來個酒啊 不醉不罷休 </P>
+        <P>愁情煩事別放心頭</P>
+    </div>
+
+    <hr>
+    <div id="chp3-4">
+        <P>來呀來個酒啊 不醉不罷休 </P>
+        <P>愁情煩事別放心頭</P>
+    </div>
+
+
+</body>
+
+</html>

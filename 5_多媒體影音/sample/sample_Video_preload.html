@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sample Video - preload</title>
+    <style>
+        p{text-align: center;
+        font-size: 24px;
+        font-weight: bolder}
+        div{float: left;margin: 20px}
+        .type{color:red;font-size:150%}
+        section{float:left}
+
+    </style>
+</head>
+
+<body>
+    <article>
+
+        <section id="preload">
+            <div>
+                <p>Preload=<span class="type">"none"</span></p>
+                <video width="640" height="480" preload="none" controls title="preload=none">
+                    <source src="video/MVI_2542.MP4" type="video/mp4">
+                    <p>東京 井之頭恩賜公園 櫻吹雪</p>
+                </video>
+            </div>
+            <div>
+                <p>Preload=<span class="type">"auto"</span></p>
+                <video width="640" height="480" preload="auto" controls title="preload=auto">
+                    <source src="video/MVI_2542.MP4" type="video/mp4">
+                    <p>東京 井之頭恩賜公園 櫻吹雪</p>
+                </video>
+            </div>
+            <div>
+                <p>Preload=<span class="type">"metadata"</span></p>
+                <video width="640" height="480" preload="metadata" controls title="preload=metadata">
+                    <source src="video/MVI_2542.MP4" type="video/mp4">
+                    <p>東京 井之頭恩賜公園 櫻吹雪</p>
+                </video>
+            </div>
+        </section>
+
+    </article>
+
+</body>
+
+</html>

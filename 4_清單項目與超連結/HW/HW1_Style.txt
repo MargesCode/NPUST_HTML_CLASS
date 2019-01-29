@@ -1,0 +1,16 @@
+    body {
+            font-size: 18 px;
+            line-height: 200%;
+        }
+
+        ol {
+            font-weight: bold;
+        }
+
+        .question {
+            color: green
+        }
+
+        .answer {
+            color: orange
+        }

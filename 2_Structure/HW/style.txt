@@ -1,0 +1,54 @@
+<Style>
+        header,
+        footer {
+            width: 70%;
+            display: block;
+            clear: both;
+            padding: 5px;
+            text-align: center;
+        }
+
+        header {
+            background: rgb(108, 206, 201);
+            font-size: 18px;
+            color: red;
+            font-family: "Comic Sans MS";
+
+        }
+
+        footer {
+            background: palevioletred;
+            font-size: 8px;
+            color: oldlace;
+            font-family: "Comic Sans MS";
+
+        }
+
+        aside {
+            display: block;
+            float: left;
+            width: 10%;
+            height: 305px;
+            background: powderblue;
+            padding: 2px;
+            line-height: 200%
+        }
+
+        article {
+            display: block;
+            float: left;
+            width: 60%;
+            height: 300px;
+            background: papayawhip;
+            padding: 5px;
+            font-size: 18px;
+        }
+
+        section {
+            display: block;
+            /* float: right; */
+            background: papayawhip;
+            padding: 5px;
+            font-size: 12px;
+        }
+    </Style>
